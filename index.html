@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+@font-face {
+  font-family: "Optimistic";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Optimistic Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
+}
+:where(html) {
+  font-family: "Optimistic", system-ui, sans-serif;
+}
+:where(code, pre, kbd, samp) {
+  font-family: "Optimistic Mono", ui-monospace, monospace;
+}
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nwabueze Iheanyichukwu Ezeorie Eminence | slim shady</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container topbar">
+      <div class="logo"><span>NS</span> slim shady</div>
+      <nav>
+        <a href="#photo">Photo</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" class="theme-btn">🎨 Theme</button>
+    </div>
+  </header>
+
+  <!-- Theme Panel -->
+  <div id="themePanel" class="theme-panel hidden">
+    <div class="theme-header">
+      <h3>Choose Theme Color</h3>
+      <button id="closeTheme">✕</button>
+    </div>
+    <p>Click any color to change whole website</p>
+    <div class="color-grid">
+      <button class="color-dot active" data-color="#0a0a0a" style="background:#0a0a0a" title="Black"></button>
+      <button class="color-dot" data-color="#ffffff" style="background:#ffffff; border:1px solid #ccc" title="White"></button>
+      <button class="color-dot" data-color="#2563eb" style="background:#2563eb" title="Blue"></button>
+      <button class="color-dot" data-color="#dc2626" style="background:#dc2626" title="Red"></button>
+      <button class="color-dot" data-color="#16a34a" style="background:#16a34a" title="Green"></button>
+      <button class="color-dot" data-color="#9333ea" style="background:#9333ea" title="Purple"></button>
+      <button class="color-dot" data-color="#ec4899" style="background:#ec4899" title="Pink"></button>
+      <button class="color-dot" data-color="#f59e0b" style="background:#f59e0b" title="Orange"></button>
+      <button class="color-dot" data-color="#14b8a6" style="background:#14b8a6" title="Teal"></button>
+      <button class="color-dot" data-color="#eab308" style="background:#eab308" title="Yellow"></button>
+      <button class="color-dot" data-color="#7c3aed" style="background:#7c3aed" title="Violet"></button>
+      <button class="color-dot" data-color="#0891b2" style="background:#0891b2" title="Cyan"></button>
+      <button class="color-dot" data-color="#be185d" style="background:#be185d" title="Rose"></button>
+      <button class="color-dot" data-color="#059669" style="background:#059669" title="Emerald"></button>
+      <button class="color-dot" data-color="#ea580c" style="background:#ea580c" title="Deep Orange"></button>
+      <button class="color-dot" data-color="#4f46e5" style="background:#4f46e5" title="Indigo"></button>
+    </div>
+    <div class="custom-color">
+      <label>Custom color:</label>
+      <input type="color" id="customColorPicker" value="#0a0a0a">
+    </div>
+  </div>
+
+  <main class="container">
+
+    <!-- BIG PHOTO UPLOAD SECTION -->
+    <section id="photo" class="photo-section">
+      <h2>My Photo</h2>
+      <div class="big-photo-wrap">
+        <div class="big-photo-frame" id="photoFrame">
+          <img id="photoPreview" class="hidden" alt="Your photo">
+          <div id="photoPlaceholder" class="photo-placeholder">
+            <div class="photo-icon">📸</div>
+            <h3>Upload Your Photo</h3>
+            <p>Click here or drag & drop your photo<br><small>Big, clear photo recommended</small></p>
+          </div>
+        </div>
+        <div class="photo-actions">
+          <label for="photoInput" class="btn">📤 Choose Photo</label>
+          <button id="removePhoto" class="btn ghost hidden">🗑 Remove Photo</button>
+          <input type="file" id="photoInput" accept="image/*" hidden>
+        </div>
+        <p class="photo-hint">Your photo will be saved and show every time you open the site. Supports JPG, PNG.</p>
+      </div>
+    </section>
+
+    <section class="hero">
+      <h1>Hi, I'm <span>Nwabueze Iheanyichukwu Ezeorie Eminence</span></h1>
+      <p class="nickname">Nickname: slim shady</p>
+      <p>I'm a Computer Engineering student of the University of Calabar, Cross River State, Nigeria. I'm a Christian student learning and growing every day.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p><strong>Full Name:</strong> Nwabueze Iheanyichukwu Ezeorie Eminence</p>
+        <p><strong>Nickname:</strong> slim shady</p>
+        <p><strong>Date of Birth:</strong> Tuesday 15th April 2008</p>
+        <p><strong>Country:</strong> Nigeria</p>
+        <p><strong>State:</strong> Rivers State</p>
+        <p><strong>LGA:</strong> Ogba Egbema Ndoni Local Government Area (ONELGA)</p>
+        <p><strong>Home Town:</strong> Obite Town</p>
+        <p><strong>Religion:</strong> Christian</p>
+        <p><strong>Best Color:</strong> Pink</p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Primary School</h3>
+          <p>Brighter Nursery and Primary School Obite (BNPSO)</p>
+        </div>
+
+        <div class="card">
+          <h3>Secondary School</h3>
+          <p>ADVENTIST COMPREHENSIVE COLLEGE (ACC) OBITE</p>
+        </div>
+
+        <div class="card">
+          <h3>University</h3>
+          <p>University of Calabar (UNICAL)</p>
+          <p><strong>Course:</strong> Computer Engineering</p>
+          <p><strong>Level:</strong> 100 Level</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p><strong>Email:</strong> nwabuezeeminence@gmail.com</p>
+        <p><strong>WhatsApp:</strong> +2347025279121</p>
+        <p><strong>Business Account:</strong> nexa-app</p>
+        <p><strong>Address:</strong> No 26 Egita Road, Obite Town, ONELGA, Rivers State, Nigeria</p>
+        <a class="btn" href="mailto:nwabuezeeminence@gmail.com">Send Email</a>
+        <a class="btn whatsapp" href="https://wa.me/2347025279121">Chat on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Nwabueze Iheanyichukwu Ezeorie Eminence - slim shady | Obite Town, ONELGA, Rivers State, Nigeria</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+  </html>
